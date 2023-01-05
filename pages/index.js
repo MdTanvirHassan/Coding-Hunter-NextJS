@@ -33,15 +33,21 @@ export default function Home() {
         </div>
         <div className={`${styles.blog} ${styles}`}>
         <h2 >Popular Blogs</h2>
-        <h3 className={styles.description }>How to Learn Next Js In 2023</h3>
-        <p >React Framework for Production</p>
-        <h3 className={styles.description }>How to Learn Node Js In 2023</h3>
+        <div className={`${styles.description} ${styles.cursor} `}>
+          <h3 className={styles.blogItem}>How to Learn Next Js In 2023</h3>
+          <p >React Framework for Production</p>
+        </div>
+        
+          <div className={`${styles.description} ${styles.cursor} `}>
+             <h3 className={styles.blogItem}>How to Learn Node Js In 2023</h3>
+              <p>React Framework for Production</p>
+          </div>
+        
+        <div className={`${styles.description} ${styles.cursor} `}>
+        <h3 className={styles.blogItem}>How to Learn MERN Stack In 2023</h3>
         <p>React Framework for Production</p>
-
-        <h3 className={styles.description }>How to Learn MERN Stack In 2023</h3>
-        <p>React Framework for Production</p>
-          
-          
+        </div>
+  
         </div>
 
         {/* <div className={styles.center}> 

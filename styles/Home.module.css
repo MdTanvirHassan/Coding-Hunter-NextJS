@@ -309,3 +309,13 @@
   margin: 10px 0px !important;
   
 }
+.blog{
+  display: block;
+}
+.blogItem{
+  margin:5px 0px !important;
+ 
+}
+.cursor{
+  cursor: pointer;
+}
