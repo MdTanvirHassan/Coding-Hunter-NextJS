@@ -22,27 +22,23 @@ export default function Home() {
           }
         `}
       </style>
-      <nav className={styles.mainNav}>
       
-          <ul className={styles}>
-           <Link href="/"> <li className={styles.thirteen}><span >Tanvir </span></li></Link>
-           <Link href="/"> <li>Home</li></Link>
-           <Link href="/blog"> <li>Blogs</li></Link>
-           <Link href="/about"> <li>About</li></Link>
-           <Link href="/contract"> <li>Contracts</li></Link>
-          </ul>
-        </nav>
       <main className={styles.main}>
-        <h1 className='red'>Hunting Coder</h1>
+        <h1 className={styles.marginY}>Hunting Coder</h1>
+        <div >
+          <Image src="/coder.jpg" alt="" width={450} height={200} className={styles.imgArea}/>
+        </div>
+        <div className={styles.marginY}>
         <p >A blog for Hunting Coder by Hunting Coder</p>
+        </div>
         <div className={`${styles.blog} ${styles}`}>
-        <h2 className='red'>Popular Blogs</h2>
-        <h3>How to Learn Next Js In 2022</h3>
+        <h2 >Popular Blogs</h2>
+        <h3 className={styles.description }>How to Learn Next Js In 2023</h3>
         <p >React Framework for Production</p>
-        <h3>How to Learn Next Js In 2022</h3>
+        <h3 className={styles.description }>How to Learn Node Js In 2023</h3>
         <p>React Framework for Production</p>
 
-        <h3>How to Learn Next Js In 2022</h3>
+        <h3 className={styles.description }>How to Learn MERN Stack In 2023</h3>
         <p>React Framework for Production</p>
           
           

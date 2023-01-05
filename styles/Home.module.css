@@ -1,10 +1,13 @@
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
-  padding: 6rem;
+  padding: 2rem;
   min-height: 100vh;
+}
+.main h1{
+  font-size: 3rem;
 }
 
 .description {
@@ -16,6 +19,7 @@
   width: 100%;
   z-index: 2;
   font-family: var(--font-mono);
+  margin: 10px 0px !important;
 }
 
 .description a {
@@ -295,4 +299,13 @@
 }
 .mainNav li:hover{
   border-bottom: 2px solid grey;
+}
+.marginY{
+  margin:25px 0px !important;
+}
+.imgArea{
+  border: 2px solid rgba(var(--callout-border-rgb), 0.9);
+  border-radius: var(--border-radius);
+  margin: 10px 0px !important;
+  
 }
