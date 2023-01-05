@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import { Inter } from '@next/font/google'
 import styles from '../styles/Home.module.css'
 
@@ -14,23 +15,30 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <style jsx global>
+        {`
+          .red{
+            color:red;
+          }
+        `}
+      </style>
       <nav className={styles.mainNav}>
       
           <ul className={styles}>
-            <li className={styles.thirteen}><span >Tanvir </span></li>
-              <li>Home</li>
-              <li>Blogs</li>
-              <li>About</li>
-              <li>Contracts</li>
+           <Link href="/"> <li className={styles.thirteen}><span >Tanvir </span></li></Link>
+           <Link href="/"> <li>Home</li></Link>
+           <Link href="/blog"> <li>Blogs</li></Link>
+           <Link href="/about"> <li>About</li></Link>
+           <Link href="/contract"> <li>Contracts</li></Link>
           </ul>
         </nav>
       <main className={styles.main}>
-        <h1>Hunting Coder</h1>
+        <h1 className='red'>Hunting Coder</h1>
         <p >A blog for Hunting Coder by Hunting Coder</p>
-        <div className={styles.blog}>
-        <h2>Popular Blogs</h2>
+        <div className={`${styles.blog} ${styles}`}>
+        <h2 className='red'>Popular Blogs</h2>
         <h3>How to Learn Next Js In 2022</h3>
-        <p>React Framework for Production</p>
+        <p >React Framework for Production</p>
         <h3>How to Learn Next Js In 2022</h3>
         <p>React Framework for Production</p>
 
