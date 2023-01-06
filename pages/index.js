@@ -33,20 +33,26 @@ export default function Home() {
         </div>
         <div className={`${styles.blog} ${styles}`}>
         <h2 >Popular Blogs</h2>
-        <div className={`${styles.description} ${styles.cursor} `}>
-          <h3 className={styles.blogItem}>How to Learn Next Js In 2023</h3>
-          <p >React Framework for Production</p>
-        </div>
+        <Link href={`/blogpost/learn-nextJS`} className={`${styles.description} ${styles.cursor} `}>
+          <div >
+            <h3 className={styles.blogItem}>How to Learn Next Js In 2023</h3>
+            <p >React Framework for Production</p>
+          </div>
+        </Link>
         
-          <div className={`${styles.description} ${styles.cursor} `}>
+        <Link href={`/blogpost/learn-nodeJS`} className={`${styles.description} ${styles.cursor} `}>
+          <div >
              <h3 className={styles.blogItem}>How to Learn Node Js In 2023</h3>
               <p>React Framework for Production</p>
           </div>
-        
-        <div className={`${styles.description} ${styles.cursor} `}>
-        <h3 className={styles.blogItem}>How to Learn MERN Stack In 2023</h3>
-        <p>React Framework for Production</p>
-        </div>
+        </Link>
+          
+        <Link href={`/blogpost/learn-MERN-Stack`} className={`${styles.description} ${styles.cursor} `}>
+            <div >
+            <h3 className={styles.blogItem}>How to Learn MERN Stack In 2023</h3>
+            <p>React Framework for Production</p>
+            </div>
+        </Link>
   
         </div>
 
