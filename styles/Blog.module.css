@@ -11,6 +11,8 @@
   }
   .blog{
     display: block;
+    width: 50%;
+    
   }
   .blogItem{
     margin:5px 0px !important;
