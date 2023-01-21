@@ -22,7 +22,7 @@ const Slug = () => {
 
   return <div className={styles.container}>
     <div className={styles.main} key={blog.slug}>
-    <h1> {blog && blog.title}</h1>
+    <h1> {blog && blog.title}</h1> <br /> <br />
     <p>{blog && blog.content}</p>
     </div>
     </div>
